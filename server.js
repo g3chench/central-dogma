@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.get('/getdb', function (req, res) {
 
     db.centraldogma.find(function (err, entries) {
+    	if (err) console.error(err);
 		res.send(entries);
 	});
 });
