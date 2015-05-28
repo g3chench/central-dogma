@@ -5,7 +5,7 @@ converter.controller('bodyCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.dnadone = false;
 
 	$scope.convertDNA = function() {
-        $http.post('http://localhost:9000/convertAA', $scope.entry).success(function (data) {
+        $http.post('http://localhost:9000/convertDNA', $scope.entry).success(function (data) {
             $scope.currentAA = data.aa;
             $scope.dnadone = true;
         });

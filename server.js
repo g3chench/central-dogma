@@ -15,7 +15,7 @@ app.get('/getdb', function (req, res) {
 	});
 });
 
-app.post('/convertAA', function (req, res) {
+app.post('/convertDNA', function (req, res) {
 
 	var script = childProcess.spawn(
      	'python3', ["./sequence.py", req.body.dna]
@@ -35,7 +35,7 @@ app.post('/convertAA', function (req, res) {
             db.centraldogma.save(results);
             
         } else {
-        	console.log("Error in convertAA");
+        	console.log("Error in convertDNA");
         }
 
         res.send(results);
