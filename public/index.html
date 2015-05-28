@@ -22,13 +22,18 @@
 			</div>
 
 			<div class="col-md-4">
+				<h3>RNA</h3>
+				<textarea class="form-control" rows="10" ng-show="dnadone">{{currentRNA}}</textarea>
+			</div>
+
+			<div class="col-md-4">
 				<h3>Protein</h3>
-				<p class="well" style="word-wrap: break-word" ng-show="dnadone">{{currentAA}}</p>
+				<textarea class="form-control" rows="10" ng-show="dnadone">{{currentAA}}</textarea>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-4">
 				<br>
 				<button class="btn btn-primary center-block" ng-click="convertDNA()">Convert DNA</button>
 			</div>
