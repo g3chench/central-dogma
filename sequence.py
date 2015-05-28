@@ -123,10 +123,10 @@ MAPPING2 = {
 }
 
 
-seq = argv[1]
+dna = argv[1]
 
 rna = ''
-rna = seq.replace('T', 'U')
+rna = dna.replace('T', 'U')
 
 output = ''
 temp = ''
@@ -160,4 +160,5 @@ while (True):
                 break
 
 print(rna.strip())
+print(len(dna))
 print(output.strip())

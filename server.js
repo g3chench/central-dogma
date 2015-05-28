@@ -34,7 +34,8 @@ app.post('/convertDNA', function (req, res) {
             var results = {
                 dna: req.body.dna,
                 rna: arr[0],
-                aa: arr.slice(1, -1)
+                aa: arr.slice(2, -1),
+                len: arr[1]
             };
 
             db.centraldogma.save(results);
