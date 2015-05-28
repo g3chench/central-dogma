@@ -152,4 +152,5 @@ while (True):
         if codons_to_letter(codon) == '?':  # valid sequence
             break
 
-print(output)
+print(rna.strip())
+print(output.strip())

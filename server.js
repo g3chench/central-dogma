@@ -18,18 +18,21 @@ app.get('/getdb', function (req, res) {
 app.post('/convertDNA', function (req, res) {
 
 	var script = childProcess.spawn(
-     	'python3', ["./sequence.py", req.body.dna]
+     	'python3', ["./sequence.py", req.body.dna, 0]
 	);
 	var output = ""
+	var arr = [];
 	script.stdout.on('data', function (stdout) {
 		output = stdout.toString();
+		arr = output.split("\n");
 	});
 	script.on('close', function (code) {
 
     	if (code === 0) {
             var results = {
                 dna: req.body.dna,
-                aa: output
+                rna: arr[0],
+                aa: arr[1]
             };
 
             db.centraldogma.save(results);
@@ -41,6 +44,8 @@ app.post('/convertDNA', function (req, res) {
         res.send(results);
     });
 });
+
+
 
 app.listen(9000);
 console.log("Server running on port 9000");
