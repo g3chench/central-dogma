@@ -1,0 +1,21 @@
+<div class="row">
+	<h1>Retrieve Data from the Database</h1>
+	<hr>
+	<div class="col-md-12" ng-click="getdb()">
+		<button class="btn btn-primary center-block">Refresh</button>
+		<br>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div ng-repeat="i in entries">
+			<div class="well" style="word-wrap: break-word">
+				<p>DNA: {{i.dna}}<br><br>
+				RNA: {{i.rna}}<br><br>
+				AA: {{i.aa}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
