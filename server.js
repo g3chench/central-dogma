@@ -42,7 +42,7 @@ app.post('/convertDNA', function (req, res) {
         } else {
         	console.log("Error in convertDNA");
         }
-        console.log(results);
+
         res.send(results);
     });
 });
