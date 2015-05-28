@@ -25,7 +25,6 @@ app.post('/convertAA', function (req, res) {
 		output = stdout.toString();
 	});
 	script.on('close', function (code) {
-		console.log(output);
        	res.send(output);
     });
 });
