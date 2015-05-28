@@ -1,6 +1,8 @@
 # central-dogma
 
-A RESTfulAPI that converts a given DNA sequence into its corresponding protein. Built using the MEAN stack:
+***_Database functionality not yet implemented_***
+
+A RESTful API that converts a given DNA sequence into its corresponding protein. Built using the [MEAN](http://mean.io/) stack:
 
 - [MongoDB](https://www.mongodb.org/)
 - [Express](http://expressjs.com/)
