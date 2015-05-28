@@ -2,16 +2,16 @@
 
 A RESTfulAPI that converts a given DNA sequence into its corresponding protein. Built using the MEAN stack:
 
--[MongoDB](https://www.mongodb.org/)
--[Express](http://expressjs.com/)
--[AngularJS](https://angularjs.org/)
--[NodeJS](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.org/)
+- [Express](http://expressjs.com/)
+- [AngularJS](https://angularjs.org/)
+- [NodeJS](https://nodejs.org/)
 
 ### Dependencies
 
--[NodeJS](https://nodejs.org/)
--[MongoDB](https://www.mongodb.org/)
--[Python 3](https://www.python.org/)
+- [NodeJS](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.org/)
+- [Python 3](https://www.python.org/)
 
 Install relevant Node modules using
 
