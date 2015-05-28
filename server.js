@@ -4,9 +4,11 @@ var mongojs = require('mongojs');
 var db = mongojs('centraldogma', ['centraldogma']);
 var bodyParser = require('body-parser');
 var childProcess = require('child_process');
+var router = angular.module('routerApp', ['ui.router']);
 
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
+
 
 app.get('/getdb', function (req, res) {
 
@@ -14,6 +16,7 @@ app.get('/getdb', function (req, res) {
 		res.send(entries);
 	});
 });
+
 
 app.post('/convertDNA', function (req, res) {
 
@@ -44,7 +47,6 @@ app.post('/convertDNA', function (req, res) {
         res.send(results);
     });
 });
-
 
 
 app.listen(9000);

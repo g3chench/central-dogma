@@ -1,6 +1,8 @@
 # central-dogma
 
-A RESTful API that converts a given DNA sequence into its corresponding protein and stores the information in a Mongo database. Built using the [MEAN](http://mean.io/) stack:
+[The Central Dogma of Molecular Biology](http://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology)
+
+A RESTful API that converts a given DNA sequence into its corresponding amino acids and stores the information in a Mongo database. Built using the [MEAN](http://mean.io/) stack:
 
 - [MongoDB](https://www.mongodb.org/)
 - [Express](http://expressjs.com/)
