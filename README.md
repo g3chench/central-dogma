@@ -2,7 +2,7 @@
 
 [The Central Dogma of Molecular Biology](http://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology)
 
-A RESTful API that converts a given DNA sequence into its corresponding RNA and amino acid sequence and stores the information in a Mongo database. Built using the [MEAN](http://mean.io/) stack:
+A RESTful API that converts a given DNA sequence into its corresponding RNA and amino acid sequences and stores the information in a Mongo database. Built using the [MEAN](http://mean.io/) stack:
 
 - [MongoDB](https://www.mongodb.org/)
 - [Express](http://expressjs.com/)
