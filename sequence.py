@@ -129,6 +129,7 @@ rna = ''
 rna = seq.replace('T', 'U')
 
 output = ''
+temp = ''
 if ('AUG' in rna):
 	start = rna.index('AUG')
 else:
@@ -140,17 +141,23 @@ while (True):
     codon = rna[i:i+3]
     if len(codon) < 3:
         if ('AUG' in rna[start+1:]):    # reached end of sequence
-            output = ''
+            temp = ''
             start = rna.index('AUG', start+1)   # looks for next
             i = start                           # start codon
         else:
             break   # no more start codons
 
     else:
-        output += codons_to_letter(codon)
+        temp += codons_to_letter(codon)
         i += 3
-        if codons_to_letter(codon) == '?':  # valid sequence
-            break
+        if codons_to_letter(codon) == '?':
+            output += temp + '\n'   # valid sequence
+            if ('AUG' in rna[i:]):
+                temp = ''
+                start = rna.index('AUG', i)
+                i = start
+            else:
+                break
 
 print(rna.strip())
 print(output.strip())
