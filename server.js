@@ -20,7 +20,7 @@ app.get('/getdb', function (req, res) {
 app.post('/convertDNA', function (req, res) {
 
 	var script = childProcess.spawn(
-     	'python3', ["./sequence.py", req.body.dna, 0]
+     	'python3', ["./sequence.py", req.body.dna]
 	);
 	var output = ""
 	var arr = [];
