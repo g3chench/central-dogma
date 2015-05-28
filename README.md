@@ -1,8 +1,6 @@
 # central-dogma
 
-***_Database functionality not yet implemented_***
-
-A RESTful API that converts a given DNA sequence into its corresponding protein. Built using the [MEAN](http://mean.io/) stack:
+A RESTful API that converts a given DNA sequence into its corresponding protein and stores the information in a Mongo database. Built using the [MEAN](http://mean.io/) stack:
 
 - [MongoDB](https://www.mongodb.org/)
 - [Express](http://expressjs.com/)
@@ -22,6 +20,10 @@ Install relevant Node modules using
 ### Development
 
 To set up the app:
+
+Make sure MongoDB is up by `cd`-ing to its directory and executing
+
+`mongod`
 
 Run the server with
 

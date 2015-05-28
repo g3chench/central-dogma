@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.get('/getdb', function (req, res) {
 
-    db.centraldogma.find(function (err, docs) {
+    db.centraldogma.find(function (err, entries) {
 		res.send(entries);
 	});
 });
@@ -25,7 +25,20 @@ app.post('/convertAA', function (req, res) {
 		output = stdout.toString();
 	});
 	script.on('close', function (code) {
-       	res.send(output);
+
+    	if (code === 0) {
+            var results = {
+                dna: req.body.dna,
+                aa: output
+            };
+
+            db.centraldogma.save(results);
+            
+        } else {
+        	console.log("Error in convertAA");
+        }
+
+        res.send(results);
     });
 });
 

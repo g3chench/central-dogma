@@ -129,7 +129,11 @@ rna = ''
 rna = seq.replace('T', 'U')
 
 output = ''
-start = rna.index('AUG')
+if ('AUG' in rna):
+	start = rna.index('AUG')
+else:
+	start = len(rna)
+	output += "No sequence found!"
 i = start
 
 while (True):

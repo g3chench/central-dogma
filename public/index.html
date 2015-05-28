@@ -18,36 +18,45 @@
 		<div class="row">
 			<div class="col-md-5">
 				<h3>DNA</h3>
-				<textarea class="form-control" rows="8" placeholder="Insert DNA sequence here" ng-model="entry.dna"></textarea>
+				<textarea class="form-control" rows="10" placeholder="Insert DNA sequence here" ng-model="entry.dna"></textarea>
 			</div>
 
 			<div class="col-md-5">
 				<h3>Protein</h3>
-				<p class="well" style="word-wrap: break-word" ng-show="done">{{currentAA}}</p>
+				<p class="well" style="word-wrap: break-word" ng-show="dnadone">{{currentAA}}</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-5">
 				<br>
-				<button class="btn btn-primary" ng-click="convertAA()">Convert!</button>
+				<button class="btn btn-primary" ng-click="convertDNA()">Convert DNA</button>
 			</div>
 		</div>
 
-		<!-- <hr>
+		<hr>
 
 		<div class="row">
 			<div class="col-md-10">
 				<h3>Database</h3>
-				<p class="well"></p>
+				<div ng-repeat="i in entries">
+					<div class="well" style="word-wrap: break-word">
+						<p>DNA: {{i.dna}}
+						<br>
+						<br>
+						AA: {{i.aa}}
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-10" ng-click="getdb()">
+				<br>
 				<button class="btn btn-primary">Refresh</button>
 			</div>
-		</div> -->
+		</div>
 
 	</div>
 
