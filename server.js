@@ -5,7 +5,7 @@ var db = mongojs('centraldogma', ['centraldogma']);
 var bodyParser = require('body-parser');
 var childProcess = require('child_process');
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
 app.use(bodyParser.json());
 
 
