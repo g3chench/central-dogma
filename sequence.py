@@ -134,7 +134,7 @@ if ('AUG' in rna):
 	start = rna.index('AUG')
 else:
 	start = len(rna)
-	output = "No sequence found!"
+	output = 'No sequence found!'
 i = start
 
 while (True):
@@ -145,7 +145,7 @@ while (True):
             start = rna.index('AUG', start+1)   # looks for next
             i = start                           # start codon
         else:
-            output = "No sequence found!"
+            output = 'No sequence found!'
             break   # no more start codons
 
     else:
