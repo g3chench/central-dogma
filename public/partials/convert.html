@@ -7,14 +7,14 @@
 			<textarea class="form-control" rows="12" placeholder="Insert DNA sequence here" ng-model="entry.dna"></textarea>
 		</div>
 
-		<div class="col-md-4">
-			<h3 ng-show="done">RNA</h3>
-			<textarea class="form-control" rows="12" ng-show="done">{{currentRNA}}</textarea>
+		<div class="col-md-4" ng-show="done">
+			<h3>RNA</h3>
+			<textarea class="form-control" rows="12">{{currentRNA}}</textarea>
 		</div>
 
-		<div class="col-md-4">
-			<h3 ng-show="done">Protein(s)</h3>
-			<textarea class="form-control" rows="12" ng-show="done">{{currentAA}}</textarea>
+		<div class="col-md-4" ng-show="done">
+			<h3>Protein(s)</h3>
+			<textarea class="form-control" rows="12">{{currentAA}}</textarea>
 		</div>
 	</div>
 
