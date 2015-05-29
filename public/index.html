@@ -7,23 +7,22 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-	<title>DNA -> Protein</title>
+	<title>DNA -> Proteins</title>
 </head>
 
-<body class="container">
+<body class="container" ng-controller="bodyCtrl">
 
 	<!-- Angular -->
   	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
   	<!-- UI-Router -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
-	<!-- NAVIGATION -->
-	<nav class="navbar">
-	    <ul class="nav navbar-nav">
-	        <li><a ui-sref="convert">Convert</a></li>
-	        <li><a ui-sref="database">Database</a></li>
-	    </ul>
-	</nav>
+	<br>
+
+	<ul class="nav nav-tabs">
+		<li><a ui-sref="convert">Convert</a></li>
+	    <li><a ui-sref="database">Database</a></li>   
+	</ul>
 
 	<div ui-view></div>
 

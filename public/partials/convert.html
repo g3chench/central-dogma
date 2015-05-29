@@ -1,6 +1,5 @@
 <div class="container" ng-controller="bodyCtrl">
-	<h1>Convert DNA to Protein</h1>
-	<hr>
+	<h1>Convert DNA to Proteins</h1>
 
 	<div class="row">
 		<div class="col-md-4">
@@ -9,12 +8,12 @@
 		</div>
 
 		<div class="col-md-4">
-			<h3>RNA</h3>
+			<h3 ng-show="done">RNA</h3>
 			<textarea class="form-control" rows="12" ng-show="done">{{currentRNA}}</textarea>
 		</div>
 
 		<div class="col-md-4">
-			<h3>Protein</h3>
+			<h3 ng-show="done">Protein(s)</h3>
 			<textarea class="form-control" rows="12" ng-show="done">{{currentAA}}</textarea>
 		</div>
 	</div>

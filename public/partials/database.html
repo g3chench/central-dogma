@@ -1,26 +1,24 @@
 <div class="container" ng-controller="bodyCtrl">
-	<div class="row">
-		<h1>Show Database</h1>
-		<hr>
+	<h1>Retrieve Database</h1>
+	<br>
 
-		<div class="col-md-12" ng-click="getdb()">
-			<br>
-			<button class="btn btn-primary center-block">Results</button>
-			<br>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-12">
+	<div class="col-md-11">
+		<div class="row">
 			<div ng-repeat="i in entries">
 				<div class="well" style="word-wrap: break-word">
 					<p>DNA: {{i.dna}}<br><br>
 					RNA: {{i.rna}}<br><br>
-					Amino Acid: {{i.aa}}<br><br>
+					Amino Acids: {{i.aa}}<br><br>
 					Length: {{i.len}} base pairs
 					</p>
 				</div>
 			</div>
+		</div>
+
+		<div class="row" ng-click="getdb()">
+			<br>
+			<button class="btn btn-primary center-block">Show</button>
+			<br>
 		</div>
 	</div>
 </div>

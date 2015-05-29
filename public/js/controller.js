@@ -20,8 +20,8 @@ converter.controller("bodyCtrl", ["$scope", "$http", function($scope, $http) {
                 $scope.entries = data;
         });
     };
-
 }]);
+
 
 converter.config(function($stateProvider, $urlRouterProvider) {
     

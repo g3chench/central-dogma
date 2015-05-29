@@ -130,22 +130,20 @@ rna = dna.replace('T', 'U')
 
 output = ''
 temp = ''
-if ('AUG' in rna):
+if 'AUG' in rna:
 	start = rna.index('AUG')
 else:
 	start = len(rna)
-	output = 'No sequence found!'
 i = start
 
-while (True):
+while True:
     codon = rna[i:i+3]
     if len(codon) < 3:
-        if ('AUG' in rna[start+1:]):    # reached end of sequence
+        if 'AUG' in rna[start+1:]:    # reached end of sequence
             temp = ''
             start = rna.index('AUG', start+1)   # looks for next
             i = start                           # start codon
         else:
-            output = 'No sequence found!'
             break   # no more start codons
 
     else:
@@ -153,12 +151,15 @@ while (True):
         i += 3
         if codons_to_letter(codon) == '?':
             output += temp + '\n'   # valid sequence
-            if ('AUG' in rna[i:]):
+            if 'AUG' in rna[i:]:
                 temp = ''
                 start = rna.index('AUG', i)
                 i = start
             else:
                 break
+
+if not output:
+    output = 'No sequence found!'
 
 print(rna.strip())
 print(len(dna))
