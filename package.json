@@ -12,6 +12,7 @@
     "start": "node server.js",
     "debug": "node debug server.js"
   },
+  "author": "cchens",
   "repository": {
     "type": "git",
     "url": "https://github.com/cchens/central-dogma.git"
