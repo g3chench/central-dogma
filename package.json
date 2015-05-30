@@ -1,0 +1,19 @@
+{
+  "name": "central_dogma",
+  "version": "1.0.0",
+  "description": "Convert DNA to AA",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "mongojs" : "^0.18.2"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node debug server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cchens/central-dogma.git"
+  }
+}
