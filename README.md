@@ -15,22 +15,21 @@ A RESTful API that converts a given DNA sequence into its corresponding RNA and 
 - [MongoDB](https://www.mongodb.org/)
 - [Python 3](https://www.python.org/)
 
-Install relevant Node modules using
+Install Node modules:
 
-`npm install`
+`npm install express`
+`npm install mongojs`
+`npm install body-parser`
 
 ### Development
 
 To set up the app:
 
-Make sure MongoDB is up by `cd`-ing to its directory and executing
-
+- Make sure MongoDB is up by `cd`-ing to its directory and executing
 `mongod`
 
-Run the server with
-
+- Run the server with
 `node server`
 
 The app runs at
-
 `http://localhost:9000/`
