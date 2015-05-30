@@ -17,9 +17,9 @@ A RESTful API that converts a given DNA sequence into its corresponding RNA and 
 
 Install Node modules:
 
-`npm install express`
-`npm install mongojs`
-`npm install body-parser`
+    npm install express
+    npm install mongojs
+    npm install body-parser
 
 ### Development
 
