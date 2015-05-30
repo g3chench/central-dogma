@@ -130,8 +130,6 @@ rna = dna.replace('T', 'U')
 
 output = ''
 temp = ''
-startbp = []
-endbp = []
 if 'AUG' in rna:
 	start = rna.index('AUG')
 else:
@@ -153,8 +151,6 @@ while True:
         i += 3
         if codons_to_letter(codon) == '?':
             output += temp + '\n'   # valid sequence
-            startbp.append(start)
-            endbp.append(i)
             if 'AUG' in rna[i:]:
                 temp = ''
                 start = rna.index('AUG', i)
