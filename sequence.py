@@ -151,9 +151,9 @@ while True:
         i += 3
         if codons_to_letter(codon) == '?':
             output += temp + '\n'   # valid sequence
-            if 'AUG' in rna[i:]:
+            if 'AUG' in rna[start+1:]:
                 temp = ''
-                start = rna.index('AUG', i)
+                start = rna.index('AUG', start+1)
                 i = start
             else:
                 break
