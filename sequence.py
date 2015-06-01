@@ -128,7 +128,7 @@ dna = argv[1]
 rna = ''
 rna = dna.replace('T', 'U')
 
-output = ''
+output = []
 temp = ''
 if 'AUG' in rna:
 	start = rna.index('AUG')
@@ -150,7 +150,7 @@ while True:
         temp += codons_to_letter(codon)
         i += 3
         if codons_to_letter(codon) == '?':
-            output += temp + '\n'   # valid sequence
+            output.append(temp)   # valid sequence
             if 'AUG' in rna[start+1:]:
                 temp = ''
                 start = rna.index('AUG', start+1)
@@ -163,4 +163,4 @@ if not output:
 
 print(rna.strip())
 print(len(dna))
-print(output.strip())
+print(output)

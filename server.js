@@ -35,7 +35,7 @@ app.post("/convertDNA", function (req, res) {
             var results = {
                 dna: req.body.dna,
                 rna: arr[0],
-                aa: arr.slice(2, -1),
+                aa: arr[2],
                 len: arr[1]
             };
 
