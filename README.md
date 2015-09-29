@@ -7,11 +7,11 @@ A RESTful API that converts a given DNA sequence into its corresponding RNA and 
 - [MongoDB](https://www.mongodb.org/)
 - [Express](http://expressjs.com/)
 - [AngularJS](https://angularjs.org/)
-- [NodeJS](https://nodejs.org/)
+- [Node.js](https://nodejs.org/)
 
 ### Dependencies
 
-- [NodeJS](https://nodejs.org/)
+- [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.org/)
 - [Python 3](https://www.python.org/)
 
