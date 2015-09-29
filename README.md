@@ -28,7 +28,7 @@ To set up the app:
 - Make sure MongoDB is up by `cd`-ing to its directory and executing
 `mongod`
 
-- Run the server with
+- Run the server from this repository's root with
 `node server`
 
 The app runs at
